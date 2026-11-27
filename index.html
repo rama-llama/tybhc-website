@@ -11,6 +11,9 @@
   <meta property="og:title" content="Texas Youth Brain Health Council">
   <meta property="og:description" content="Youth-led action for brain health and brain capital.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://tybhc.org/assets/img/social-preview.png">
+  <meta property="og:image:alt" content="The TYBHC brain logo">
+  <meta name="twitter:card" content="summary_large_image">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,10 +26,7 @@
   <header class="site-header" data-header>
     <nav class="nav" aria-label="Main">
       <a class="brand" href="#top" aria-label="Texas Youth Brain Health Council, home">
-        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
-          <circle cx="9" cy="10" r="3.2"/><circle cx="23" cy="8" r="2.4"/><circle cx="16" cy="22" r="3.6"/><circle cx="26" cy="21" r="2"/>
-          <path d="M9 10 L16 22 M23 8 L16 22 M9 10 L23 8 M16 22 L26 21"/>
-        </svg>
+        <img class="brand-mark" src="assets/img/logo-mark.svg" alt="" width="35" height="30">
         <span>TYBHC</span>
       </a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" data-nav-toggle>
@@ -34,7 +34,7 @@
       </button>
       <ul class="nav-links" id="nav-links" data-nav-links>
         <li><a href="#mission">Mission</a></li>
-        <li><a href="#work">What we do</a></li>
+        <li><a href="#work">Our pillars</a></li>
         <li><a href="#workshop">Workshops</a></li>
         <li><a href="#team">Team</a></li>
         <li><a class="nav-cta" href="#join">Get involved</a></li>
@@ -49,10 +49,10 @@
       <div class="hero-inner">
         <p class="hero-org">Texas Youth Brain Health Council</p>
         <h1 class="hero-title">Brains are built in the places we grow up.</h1>
-        <p class="hero-lede">We’re students across Texas turning brain science into better schools, healthier habits, and a real youth voice in the decisions that shape our minds.</p>
+        <p class="hero-lede">We’re students across Texas turning brain science into better schools, healthier habits, and a real voice for young people in the decisions that shape our minds.</p>
         <div class="hero-actions">
           <a class="btn btn-signal" href="#join">Get involved</a>
-          <a class="btn btn-ghost" href="#work">See what we do</a>
+          <a class="btn btn-ghost" href="#work">See our pillars</a>
         </div>
       </div>
       <p class="hero-hint" aria-hidden="true">Move your cursor or tap to stimulate the network</p>
@@ -62,25 +62,26 @@
     <section class="mission" id="mission" aria-labelledby="mission-heading">
       <div class="mission-sticky">
         <h2 class="sr-only" id="mission-heading">Our mission</h2>
-        <p class="mission-text" data-scroll-lit>Our mission is to educate K–12 youth on brain health and to advocate for policies and environments designed around the brain, guided by data-driven research.</p>
+        <p class="mission-text" data-scroll-lit>Our mission is to educate K–12 youth about brain health and to advocate for policies and environments designed around the brain, guided by data-driven research.</p>
       </div>
     </section>
 
-    <!-- WHY -->
-    <section class="why section-light" aria-labelledby="why-heading">
-      <div class="container why-grid">
-        <h2 class="section-title" id="why-heading">Adolescence is when the brain does its biggest remodel.</h2>
-        <div class="why-body">
-          <p>The years between childhood and adulthood are a critical period of brain development. Yet the schools, schedules, and systems young people spend their days in aren’t always designed around what we know about the brain.</p>
-          <p>We want to close the gap between brain science and everyday life, and give young people an active role in shaping the future of brain health instead of waiting for it to be decided for them.</p>
-        </div>
+    <!-- VISION -->
+    <section class="vision" id="vision" aria-labelledby="vision-heading">
+      <div class="container vision-inner">
+        <h2 class="eyebrow" id="vision-heading">Our vision</h2>
+        <p class="vision-text">A brain-healthy generation, ready to navigate today’s world and shape tomorrow’s.</p>
       </div>
     </section>
 
-    <!-- WHAT WE DO: sticky network, one region lights per focus area -->
+    <!-- OUR FOUR PILLARS: sticky network, one region lights per pillar -->
     <section class="work section-light" id="work" aria-labelledby="work-heading">
-      <div class="container">
-        <h2 class="section-title" id="work-heading">Four ways we put neuroscience to work</h2>
+      <div class="container work-head">
+        <h2 class="section-title" id="work-heading">Our four pillars</h2>
+        <div class="work-intro">
+          <p>The years between childhood and adulthood are a critical period of brain development. Yet the schools, schedules, and systems young people spend their days in aren’t always designed around what we know about the brain.</p>
+          <p>We’re here to close the gap between brain science and everyday life, and to give young people an active role in shaping the future of brain health instead of waiting for others to decide it for them.</p>
+        </div>
       </div>
       <div class="container work-grid">
         <div class="work-visual" aria-hidden="true">
@@ -102,19 +103,19 @@
         <div class="work-steps">
           <article class="work-step" data-step="0">
             <h3>Research</h3>
-            <p>Youth-centered research into what affects brain health, learning readiness, and brain capital, starting with district-scale adolescent brain-health research in Katy ISD.</p>
+            <p>Youth-centered research into what shapes brain health, learning readiness, and brain capital, starting with district-scale research on adolescent brain health.</p>
           </article>
           <article class="work-step" data-step="1">
             <h3>Brain-healthy environments</h3>
-            <p>How architecture, light, sound, schedules, and school design can support healthy learning. We work with neuroarchitecture and healthy-school collaborators to find out.</p>
+            <p>How architecture, scheduling, school design, nutrition, socioeconomic status, and other environmental factors can support healthy learning and brain development. We work with neuroarchitects, educators, and other collaborators to find out.</p>
           </article>
           <article class="work-step" data-step="2">
             <h3>Brain health education</h3>
-            <p>Helping students understand their own brains, what keeps them healthy, and what shapes how they learn and feel. We translate technical research into plain language.</p>
+            <p>Helping students understand their own brains: what keeps them healthy, and what shapes how they learn and feel. We translate technical research into plain language anyone can use.</p>
           </article>
           <article class="work-step" data-step="3">
-            <h3>Youth leadership and collaboration</h3>
-            <p>Connecting young people with the researchers, physicians, educators, and organizations working on brain health in Texas and around the world.</p>
+            <h3>Youth leadership and global collaboration</h3>
+            <p>Connecting young people with the researchers, physicians, educators, and organizations working on brain health, in Texas and around the world.</p>
           </article>
         </div>
       </div>
@@ -125,30 +126,41 @@
       <div class="container workshop-grid">
         <div class="workshop-intro">
           <h2 class="section-title" id="workshop-heading">Meet Your Brain!</h2>
-          <p class="workshop-lede">Our hands-on workshop for kids ages 8–13 and their families, led by local high school students. It’s free, hands-on, and nobody leaves without building a neuron.</p>
+          <p class="workshop-lede">Our hands-on workshop for kids ages 8–13 and their families, led by local high school students. It’s free, it’s interactive, and nobody leaves without building something.</p>
           <dl class="workshop-facts">
             <div><dt>Who</dt><dd>Kids 8–13 and their parents</dd></div>
             <div><dt>Where</dt><dd>Local libraries and schools around Katy</dd></div>
             <div><dt>Cost</dt><dd>Free</dd></div>
           </dl>
+          <div class="next-session">
+            <p class="next-label">Next session</p>
+            <p>New dates are coming soon.</p>
+          </div>
         </div>
-        <ol class="agenda">
-          <li>
-            <span class="agenda-time">15–20 min</span>
-            <h3>Tour the brain</h3>
-            <p>The four lobes, the cerebellum, and the brainstem, plus how neurons send messages and how practice rewires them. Expect a lot of wiggling, balancing, and remembering what you ate for breakfast.</p>
-          </li>
-          <li>
-            <span class="agenda-time">30 min</span>
-            <h3>Be a neuroscientist</h3>
-            <p>Sculpt a brain out of clay, build neurons from pipe cleaners, and play brain-trick games and mini Jeopardy for prizes.</p>
-          </li>
-          <li>
-            <span class="agenda-time">10 min</span>
-            <h3>Keep it healthy</h3>
-            <p>Sleep, food, movement, friends, and breaks: the everyday habits that get a brain ready to learn.</p>
-          </li>
-        </ol>
+        <div class="session">
+          <div class="session-head">
+            <p class="session-badge">Our last session</p>
+            <p class="session-when"><time datetime="2026-11-21">Saturday, November 21, 2026</time><span>Cinco Ranch Branch Library</span></p>
+            <p class="session-note">Every session is a little different. Here’s how our last one ran.</p>
+          </div>
+          <ol class="agenda">
+            <li>
+              <span class="agenda-time">15–20 min</span>
+              <h3>Tour the brain</h3>
+              <p>The four lobes, the cerebellum, and the brainstem, plus how neurons send messages and how practice rewires them. Expect a lot of wiggling, balancing, and remembering what you ate for breakfast.</p>
+            </li>
+            <li>
+              <span class="agenda-time">30 min</span>
+              <h3>Be a neuroscientist</h3>
+              <p>Sculpt a brain out of clay, build neurons from pipe cleaners, and play brain-trick games and mini Jeopardy for prizes.</p>
+            </li>
+            <li>
+              <span class="agenda-time">10 min</span>
+              <h3>Keep it healthy</h3>
+              <p>Sleep, food, movement, friends, and breaks: the everyday habits that get a brain ready to learn.</p>
+            </li>
+          </ol>
+        </div>
       </div>
     </section>
 
@@ -157,10 +169,10 @@
       <div class="container">
         <h2 class="section-title" id="priorities-heading">Our founding year, 2026–27</h2>
         <ol class="priority-list">
-          <li><h3>Build the founding student council</h3><p>Recruit students across Texas interested in neuroscience, education, research, architecture, policy, communication, and more.</p></li>
-          <li><h3>Establish an adult advisory network</h3><p>Bring together scientific, medical, educational, architectural, and organizational advisors.</p></li>
+          <li><h3>Build the founding student council</h3><p>Recruit students across Texas who are interested in neuroscience, education, research, architecture, policy, communications, and more.</p></li>
+          <li><h3>Establish an adult advisory network</h3><p>Bring together advisors from science, medicine, education, architecture, and organizational development.</p></li>
           <li><h3>Launch our first programs</h3><p>Develop the council’s first research, brain-health education, and brain-healthy-school initiatives.</p></li>
-          <li><h3>Grow toward statewide collaboration</h3><p>Connect students and schools across Texas, then build partnerships beyond it.</p></li>
+          <li><h3>Grow toward statewide collaboration</h3><p>Connect students and schools across Texas, then build partnerships beyond the state.</p></li>
         </ol>
       </div>
     </section>
@@ -171,7 +183,7 @@
         <h2 class="section-title" id="values-heading">What guides us</h2>
         <div class="values-list">
           <div class="value"><h3>Inclusion</h3><p>Brain health is for everyone, so every perspective belongs at the table, starting young.</p></div>
-          <div class="value"><h3>Empathy</h3><p>Behind every data point is a student. We listen before we advocate.</p></div>
+          <div class="value"><h3>Empathy</h3><p>Behind every data point is a person. We listen before we advocate.</p></div>
           <div class="value"><h3>Patience</h3><p>Brains develop over years, and so does real change. We’re building for the long run.</p></div>
         </div>
       </div>
@@ -196,7 +208,7 @@
         <div class="join-grid">
           <div class="join-path">
             <h3>Students</h3>
-            <p>Interested in neuroscience, research, education, architecture, policy, communications, technology, or global health? Join the founding council.</p>
+            <p>Interested in neuroscience, research, education, architecture, policy, communications, technology, or global health? Join our founding council.</p>
           </div>
           <div class="join-path">
             <h3>Adult advisors</h3>
@@ -204,7 +216,7 @@
           </div>
           <div class="join-path">
             <h3>Schools and institutions</h3>
-            <p>Want to host a workshop or support youth-led brain-health work? Let’s talk about partnering.</p>
+            <p>Want to host a workshop or support youth-led brain-health work? Let’s talk about a partnership.</p>
           </div>
         </div>
         <a class="btn btn-signal btn-large" href="mailto:hello@tybhc.org?subject=Getting%20involved%20with%20TYBHC" data-contact-email>Email the council</a>
@@ -214,7 +226,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p class="footer-name">Texas Youth Brain Health Council</p>
+      <p class="footer-name"><img class="footer-mark" src="assets/img/logo-mark.svg" alt="" width="35" height="30">Texas Youth Brain Health Council</p>
       <p>Youth-led action for brain health and brain capital. Founded 2026 in Katy, Texas.</p>
       <p class="footer-small">© <span data-year>2026</span> TYBHC</p>
     </div>
