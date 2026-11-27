@@ -529,9 +529,10 @@ a { color: inherit; }
   display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5rem;
   margin: clamp(2.5rem, 5vw, 4rem) 0 3rem;
 }
-.join-path { padding-top: 1.5rem; border-top: 1px solid rgba(230, 235, 242, .18); }
+.join-path { display: flex; flex-direction: column; align-items: flex-start; padding-top: 1.5rem; border-top: 1px solid rgba(230, 235, 242, .18); }
 .join-path h3 { font-size: var(--step-2); margin-bottom: .75rem; color: var(--signal); }
-.join-path p { color: var(--frost-soft); }
+.join-path p { color: var(--frost-soft); margin-bottom: 1.5rem; }
+.join-btn { margin-top: auto; }
 
 /* ---------- Footer ---------- */
 .site-footer { background: var(--night-deep); color: var(--frost-soft); padding: 3rem 0 3.5rem; border-top: 1px solid rgba(230, 235, 242, .08); }
