@@ -61,7 +61,7 @@ All text lives in `index.html`, one clearly commented `<section>` per part of th
 **Before launch, update:**
 - [ ] The contact email. Search `index.html` for `hello@tybhc.org` and replace it with the council's real address.
 - [ ] The Team section. Add other co-founders' first names and roles (first names only, no photos, for student privacy).
-- [ ] Optional: add a sign-up form link (e.g. a Google Form) to the "Get involved" section.
+- [x] Sign-up form buttons (Google Forms owned by tybhc@tybhc.org) are in the "Get involved" section.
 
 ## Going live on tybhc.org (later)
 
