@@ -27,11 +27,23 @@
   const PULSE_SPEED = 0.022;   // fraction of an axon travelled per frame
   const LINKS_PER_NEURON = 3;
 
-  // Colors (match the CSS palette)
-  const C_LINK = "169, 166, 232";   // dendrite lavender
-  const C_REST = "169, 166, 232";
-  const C_FIRE = "127, 209, 185";   // signal mint
-  const C_PULSE = "242, 197, 124";  // glial amber
+  // Colors (match the logo): neurons fire blue on the left of the screen
+  // and pink-purple on the right, like the two hemispheres of the logo.
+  const C_LINK = "140, 150, 235";   // soft periwinkle connections
+  const C_REST = "150, 160, 240";
+  const C_PULSE = "255, 255, 255";  // action potentials travel as white sparks
+  const FIRE_STOPS = [              // left -> right across the screen
+    [79, 195, 247],   // sky blue
+    [58, 91, 234],    // logo blue
+    [240, 56, 111],   // logo pink
+    [181, 124, 240],  // logo purple
+  ];
+  function fireColor(x) {
+    const t = Math.min(Math.max(x / (width || 1), 0), 1) * (FIRE_STOPS.length - 1);
+    const i = Math.min(Math.floor(t), FIRE_STOPS.length - 2);
+    const f = t - i, a = FIRE_STOPS[i], b = FIRE_STOPS[i + 1];
+    return a.map((c, k) => Math.round(c + (b[k] - c) * f)).join(", ");
+  }
 
   let width = 0, height = 0, dpr = 1;
   let neurons = [];
@@ -166,6 +178,7 @@
     // cell bodies
     for (const n of neurons) {
       const charge = Math.min(n.v / THRESHOLD, 1);
+      const C_FIRE = fireColor(n.x);
       if (n.glow > 0.05) {
         const g = ctx.createRadialGradient(n.x, n.y, 0, n.x, n.y, 18 * n.glow + 4);
         g.addColorStop(0, `rgba(${C_FIRE}, ${0.55 * n.glow})`);

@@ -65,6 +65,19 @@
     steps.forEach(s => io.observe(s));
   }
 
+  /* ---------- Reveal: vision and founding-year pathway animate once in view ---------- */
+  const reveals = document.querySelectorAll("[data-reveal]");
+  if (reduceMotion || !("IntersectionObserver" in window)) {
+    reveals.forEach(el => el.classList.add("in"));
+  } else {
+    const ro = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) { entry.target.classList.add("in"); ro.unobserve(entry.target); }
+      });
+    }, { threshold: 0.35 });
+    reveals.forEach(el => ro.observe(el));
+  }
+
   /* ---------- Footer year ---------- */
   const year = document.querySelector("[data-year]");
   if (year) year.textContent = new Date().getFullYear();

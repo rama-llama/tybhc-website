@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Texas Youth Brain Health Council</title>
   <meta name="description" content="A youth-led council turning brain science into better schools, better habits, and a stronger youth voice across Texas.">
-  <meta name="theme-color" content="#16213A">
+  <meta name="theme-color" content="#0B1430">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 
   <meta property="og:title" content="Texas Youth Brain Health Council">
@@ -33,7 +33,7 @@
         <span class="sr-only">Menu</span><span class="nav-toggle-bars" aria-hidden="true"></span>
       </button>
       <ul class="nav-links" id="nav-links" data-nav-links>
-        <li><a href="#mission">Mission</a></li>
+        <li><a href="#mission">Mission &amp; vision</a></li>
         <li><a href="#work">Our pillars</a></li>
         <li><a href="#workshop">Workshops</a></li>
         <li><a href="#team">Team</a></li>
@@ -61,14 +61,18 @@
     <!-- MISSION: words light up as you scroll -->
     <section class="mission" id="mission" aria-labelledby="mission-heading">
       <div class="mission-sticky">
-        <h2 class="sr-only" id="mission-heading">Our mission</h2>
+        <h2 class="eyebrow mission-eyebrow" id="mission-heading">Our mission</h2>
         <p class="mission-text" data-scroll-lit>Our mission is to educate K–12 youth about brain health and to advocate for policies and environments designed around the brain, guided by data-driven research.</p>
       </div>
     </section>
 
     <!-- VISION -->
     <section class="vision" id="vision" aria-labelledby="vision-heading">
-      <div class="container vision-inner">
+      <div class="container vision-inner" data-reveal>
+        <div class="vision-mark" aria-hidden="true">
+          <span class="vision-ring"></span><span class="vision-ring"></span>
+          <img src="assets/img/logo-mark.svg" alt="" width="140" height="121">
+        </div>
         <h2 class="eyebrow" id="vision-heading">Our vision</h2>
         <p class="vision-text">A brain-healthy generation, ready to navigate today’s world and shape tomorrow’s.</p>
       </div>
@@ -85,19 +89,55 @@
       </div>
       <div class="container work-grid">
         <div class="work-visual" aria-hidden="true">
-          <svg viewBox="0 0 400 400" class="work-map" data-work-map>
-            <g class="links">
-              <path d="M110 120 C170 90 230 90 290 120"/>
-              <path d="M110 120 C80 190 80 230 110 290"/>
-              <path d="M290 120 C320 190 320 230 290 290"/>
-              <path d="M110 290 C170 320 230 320 290 290"/>
-              <path d="M110 120 C180 180 220 230 290 290"/>
-              <path d="M290 120 C220 180 180 230 110 290"/>
+          <svg viewBox="0 0 400 350" class="work-map" data-work-map>
+            <defs>
+              <linearGradient id="pl" gradientUnits="userSpaceOnUse" x1="56" y1="20" x2="14" y2="84"><stop offset="0" stop-color="#3A5BEA"/><stop offset="1" stop-color="#4FC3F7"/></linearGradient>
+              <linearGradient id="pr" gradientUnits="userSpaceOnUse" x1="56" y1="20" x2="14" y2="84"><stop offset="0" stop-color="#F0386F"/><stop offset="1" stop-color="#B57CF0"/></linearGradient>
+              <g id="hemi" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M55 20 C55 12 49 8 42 8 C35 8 30 12 29 19 C21 19 15 26 15 34 C15 40 18 45 23 48 C17 51 14 57 14 64 C14 73 20 79 29 80 C30 88 35 94 43 94 C50 94 55 89 55 82 Z"/>
+                <path d="M55 40 C47 40 41 35 41 27"/>
+                <path d="M23 48 C30 48 35 52 35 59 C35 64 39 67 44 67"/>
+                <path d="M29 80 C35 80 41 76 42 70"/>
+              </g>
+              <clipPath id="q0"><rect x="0" y="0" width="200" height="162"/></clipPath>
+              <clipPath id="q1"><rect x="200" y="0" width="200" height="162"/></clipPath>
+              <clipPath id="q2"><rect x="0" y="162" width="200" height="188"/></clipPath>
+              <clipPath id="q3"><rect x="200" y="162" width="200" height="188"/></clipPath>
+            </defs>
+            <g class="brain-base">
+              <use href="#hemi" transform="translate(20 18) scale(3)" stroke="url(#pl)"/>
+              <use href="#hemi" transform="translate(380 18) scale(-3 3)" stroke="url(#pr)"/>
             </g>
-            <g class="region" data-region="0"><circle cx="110" cy="120" r="54"/><circle class="core" cx="110" cy="120" r="9"/></g>
-            <g class="region" data-region="1"><circle cx="290" cy="120" r="54"/><circle class="core" cx="290" cy="120" r="9"/></g>
-            <g class="region" data-region="2"><circle cx="110" cy="290" r="54"/><circle class="core" cx="110" cy="290" r="9"/></g>
-            <g class="region" data-region="3"><circle cx="290" cy="290" r="54"/><circle class="core" cx="290" cy="290" r="9"/></g>
+            <g class="links">
+              <path d="M125 104 C170 70 230 70 275 104"/>
+              <path d="M125 232 C170 266 230 266 275 232"/>
+              <path d="M125 104 C200 150 200 186 275 232"/>
+              <path d="M275 104 C200 150 200 186 125 232"/>
+            </g>
+            <g class="region" data-region="0" data-side="left">
+              <g class="lobe"><g clip-path="url(#q0)"><use href="#hemi" transform="translate(20 18) scale(3)" stroke="url(#pl)"/></g></g>
+              <circle class="ping" cx="125" cy="104" r="22"/>
+              <circle class="badge" cx="125" cy="104" r="22"/>
+              <g class="icon" transform="translate(113 92)"><circle cx="10.5" cy="10.5" r="6"/><path d="M15 15 L20 20"/></g>
+            </g>
+            <g class="region" data-region="1" data-side="right">
+              <g class="lobe"><g clip-path="url(#q1)"><use href="#hemi" transform="translate(380 18) scale(-3 3)" stroke="url(#pr)"/></g></g>
+              <circle class="ping" cx="275" cy="104" r="22"/>
+              <circle class="badge" cx="275" cy="104" r="22"/>
+              <g class="icon" transform="translate(263 92)"><path d="M3 20 H21 M5 20 V10 L12 5 L19 10 V20 M10 20 V15 H14 V20"/></g>
+            </g>
+            <g class="region" data-region="2" data-side="left">
+              <g class="lobe"><g clip-path="url(#q2)"><use href="#hemi" transform="translate(20 18) scale(3)" stroke="url(#pl)"/></g></g>
+              <circle class="ping" cx="125" cy="232" r="22"/>
+              <circle class="badge" cx="125" cy="232" r="22"/>
+              <g class="icon" transform="translate(113 220)"><path d="M3 6 C6 4.5 9 4.5 12 6 V19 C9 17.5 6 17.5 3 19 Z M12 6 C15 4.5 18 4.5 21 6 V19 C18 17.5 15 17.5 12 19"/></g>
+            </g>
+            <g class="region" data-region="3" data-side="right">
+              <g class="lobe"><g clip-path="url(#q3)"><use href="#hemi" transform="translate(380 18) scale(-3 3)" stroke="url(#pr)"/></g></g>
+              <circle class="ping" cx="275" cy="232" r="22"/>
+              <circle class="badge" cx="275" cy="232" r="22"/>
+              <g class="icon" transform="translate(263 220)"><circle cx="12" cy="6" r="2.5"/><circle cx="5.5" cy="17.5" r="2.5"/><circle cx="18.5" cy="17.5" r="2.5"/><path d="M10.7 8.2 L6.8 15.3 M13.3 8.2 L17.2 15.3 M8 17.5 H16"/></g>
+            </g>
           </svg>
         </div>
         <div class="work-steps">
@@ -168,12 +208,17 @@
     <section class="priorities section-light" aria-labelledby="priorities-heading">
       <div class="container">
         <h2 class="section-title" id="priorities-heading">Our founding year, 2026–27</h2>
-        <ol class="priority-list">
-          <li><h3>Build the founding student council</h3><p>Recruit students across Texas who are interested in neuroscience, education, research, architecture, policy, communications, and more.</p></li>
-          <li><h3>Establish an adult advisory network</h3><p>Bring together advisors from science, medicine, education, architecture, and organizational development.</p></li>
-          <li><h3>Launch our first programs</h3><p>Develop the council’s first research, brain-health education, and brain-healthy-school initiatives.</p></li>
-          <li><h3>Grow toward statewide collaboration</h3><p>Connect students and schools across Texas, then build partnerships beyond the state.</p></li>
-        </ol>
+        <p class="priorities-lede">Four milestones, connected like a pathway: each one sets off the next.</p>
+        <div class="pathway" data-reveal>
+          <span class="pathway-line" aria-hidden="true"></span>
+          <span class="pathway-spark" aria-hidden="true"></span>
+          <ol class="priority-list">
+            <li style="--i:0"><span class="node" aria-hidden="true"></span><h3>Build the founding student council</h3><p>Recruit students across Texas who are interested in neuroscience, education, research, architecture, policy, communications, and more.</p></li>
+            <li style="--i:1"><span class="node" aria-hidden="true"></span><h3>Establish an adult advisory network</h3><p>Bring together advisors from science, medicine, education, architecture, and organizational development.</p></li>
+            <li style="--i:2"><span class="node" aria-hidden="true"></span><h3>Launch our first programs</h3><p>Develop the council’s first research, brain-health education, and brain-healthy-school initiatives.</p></li>
+            <li style="--i:3"><span class="node" aria-hidden="true"></span><h3>Grow toward statewide collaboration</h3><p>Connect students and schools across Texas, then build partnerships beyond the state.</p></li>
+          </ol>
+        </div>
       </div>
     </section>
 
