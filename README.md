@@ -12,7 +12,10 @@ index.html                 the whole home page
 assets/css/styles.css      colors, fonts, layout, responsive rules
 assets/js/neural-field.js  the hero animation (a live neural network)
 assets/js/main.js          menu, scroll effects, small helpers
-assets/favicon.svg         browser tab icon
+assets/favicon.svg         browser tab icon (the brain logo on a navy tile)
+assets/img/logo-mark.svg   the TYBHC brain logo, used in the header and footer
+assets/img/social-preview.png  image shown when the link is shared (1200×630)
+assets/img/logo-square.png     square logo with name, for social media profiles (1080×1080)
 .nojekyll                  tells GitHub Pages to serve files as-is
 ```
 
@@ -41,6 +44,8 @@ The animation pauses when it's off screen and is replaced by a still image for v
 | Signal mint | `#7FD1B9` | buttons, a neuron firing |
 | Dendrite lavender | `#A9A6E8` | connections, resting neurons |
 | Glial amber | `#F2C57C` | travelling pulses, focus outlines |
+
+**Logo colors:** the brain logo keeps its own gradients, blue `#3A5BEA` → `#4FC3F7` on the left hemisphere and pink `#F0386F` → purple `#B57CF0` on the right. It is drawn once in `assets/img/logo-mark.svg` (the right half is a mirror of the left), so editing that one file updates every place it appears.
 
 **Fonts** (from Google Fonts):
 - *Bricolage Grotesque* for headings
