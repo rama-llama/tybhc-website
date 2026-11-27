@@ -34,16 +34,19 @@ The animation pauses when it's off screen and is replaced by a still image for v
 
 ## Design
 
-**Palette: "Twilight Cortex"**, calm and low-glare:
+**Palette: matched to the brain logo**
 
 | Name | Hex | Used for |
 |---|---|---|
-| Night cortex | `#16213A` | dark sections |
-| Mist | `#EEF2F4` | light sections |
-| Ink | `#1E2A3E` | body text on light |
-| Signal mint | `#7FD1B9` | buttons, a neuron firing |
-| Dendrite lavender | `#A9A6E8` | connections, resting neurons |
-| Glial amber | `#F2C57C` | travelling pulses, focus outlines |
+| Logo navy | `#0B1430` | dark sections |
+| Mist | `#EFF2FA` | light sections |
+| Ink | `#141C33` | body text on light |
+| Sky blue | `#4FC3F7` | buttons, neurons firing on the left |
+| Logo blue | `#3A5BEA` / `#2F55D8` | left hemisphere, blue text on light |
+| Logo pink | `#F0386F` | right hemisphere, sparks |
+| Logo purple | `#B57CF0` | right hemisphere, connections |
+
+The blue-to-pink "brand gradient" (`--brand-gradient` in `styles.css`) is used for accent lines, the founding-year pathway, and the vision headline.
 
 **Logo colors:** the brain logo keeps its own gradients, blue `#3A5BEA` → `#4FC3F7` on the left hemisphere and pink `#F0386F` → purple `#B57CF0` on the right. It is drawn once in `assets/img/logo-mark.svg` (the right half is a mirror of the left), so editing that one file updates every place it appears.
 
